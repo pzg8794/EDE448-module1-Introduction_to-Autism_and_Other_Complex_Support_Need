@@ -10,6 +10,7 @@
 \usepackage{parskip}
 \usepackage{ragged2e}
 \usepackage{setspace}
+\usepackage{needspace}
 \usepackage[table]{xcolor}
 \usepackage[natbibapa]{apacite}
 
@@ -21,7 +22,11 @@
 \setlength{\parindent}{0pt}
 \setstretch{1.08}
 \bibliographystyle{apacite}
-\newcommand{\reviewsection}[1]{\vspace{0.07in}\noindent{\normalsize\bfseries\color{PrimaryRed}#1}\par\vspace{0.02in}}
+\newcommand{\reviewsection}[1]{%
+  \par\Needspace{5\baselineskip}\addvspace{0.16in}%
+  \noindent{\large\bfseries\color{PrimaryRed}#1}\par
+  \vspace{0.05in}%
+}
 
 \begin{document}
 
@@ -60,12 +65,13 @@ A reflective analysis of how diagnosis, scientific discourse, neurodiversity, me
 \begin{center}
 \renewcommand{\arraystretch}{1.18}
 \setlength{\tabcolsep}{4pt}
-\begin{tabular}{>{\bfseries\RaggedLeft}p{1.65in} p{5.0in}}
+\begin{tabular}{>{\bfseries\RaggedLeft\arraybackslash}p{1.65in} >{\RaggedRight\arraybackslash}p{5.0in}}
 Student & Piter Zacari Garcia Bautista \\
 Assignment & Module 1 Journal \\
 Course & EDE 448 --- Communication and Positive Behavioral Supports for Students with Autism and Other Complex Needs \\
 Essential Question & How does the world come to understand developmental differences? \\
-Source Conversation & Full Module 1 reading and media set, with selected sources examined in depth and the wider set used to validate, extend, or challenge the analysis \\
+Primary Sources & Three READ selections---Cole and Telesford, Ortega, and the National Education Association---plus \textit{Autism: Insight from Inside} as the selected MEDIA source \\
+Wider Source Audit & Additional Module 1 readings and media used to validate, extend, or challenge the analysis \\
 Interpretive Lenses & Puzzle Plan and EQUITAS \\
 Submission Date & July 2026 \\
 \end{tabular}
